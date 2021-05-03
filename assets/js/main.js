@@ -34,11 +34,11 @@ function generaIlBiglietto() {
     PromoEl.innerHTML = etàInput;
     //Stampare costo biglietto in base ad offerta correlata
     if (etàInput === "Minorenne"){
-        costoEl.innerHTML = prezzoMinori.toFixed(2);
+        costoEl.innerHTML = prezzoMinori.toFixed(2) + "€";
     } else if (etàInput === "Over 65") {
-        costoEl.innerHTML = prezzoOver65.toFixed(2);
+        costoEl.innerHTML = prezzoOver65.toFixed(2) + "€";
     } else {
-        costoEl.innerHTML = prezzoStandard.toFixed(2);
+        costoEl.innerHTML = prezzoStandard.toFixed(2) + "€";
     }
 
     //Stampare Numero Treno e carrozza
