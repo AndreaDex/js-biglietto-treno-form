@@ -1,0 +1,40 @@
+/* Utility class */
+.bgc_purple {
+  background-color: rgba(185, 20, 80, 1);
+}
+/*** Body stile ***/
+/* form stile */
+form {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+label {
+  color: rgba(185, 20, 80, 1);
+}
+
+input,
+select {
+  border-color: rgba(185, 20, 80, 1) !important;
+}
+
+.btn {
+  margin: 15px;
+  background-color: rgba(204, 204, 204, 1);
+  color: rgba(185, 20, 80, 1);
+  border-color: rgba(185, 20, 80, 1);
+}
+
+/* Sezione Esito */
+.esito_biglietto {
+  margin-bottom: 50px;
+}
+.biglietto {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+}
