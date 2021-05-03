@@ -20,35 +20,37 @@
             <!-- /Titolo Calcolo-->
     
             <!-- Form dati passegero -->
-            <form action="">
+            <div>
                 <!-- dati utente -->
-                <div class="form-row justify-content-around">
-                    <div class="form-group col-3">
-                        <label for="nome_cognome">Nome Cognome</label>
-                        <input type="text" class="form-control" id="nome_cognome" placeholder="Nome Cognome">
+                <div class="contenitore">
+                    <div class="row justify-content-around">
+                        <div class="col-3">
+                            <label for="nome_cognome">Nome Cognome</label>
+                            <input type="text" class="form-control" id="nome_cognome" placeholder="Nome Cognome" >
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="distanza">Km da percorrere</label>
+                            <input type="number" class="form-control" id="distanza" placeholder="Distanza" value="">
+                        </div>
+                        <div class="form-group col-3">
+                            <label for="fascia_eta">Fascia d'età</label>
+                            <select class="form-control" id="fascia_eta" value="">
+                              <option>Minorenne</option>
+                              <option>18 - 65</option>
+                              <option>Over 65</option>
+                            </select>
+                        </div>    
                     </div>
-                    <div class="form-group col-3">
-                        <label for="distanza">Km da percorrere</label>
-                        <input type="number" class="form-control" id="distanza" placeholder="Distanza">
+                    <!-- /dati utente-->
+        
+                    <!-- Pulsanti -->
+                    <div class="row justify-content-center">
+                        <button  onclick="generaIlBiglietto()" class="btn">Genera</button>
+                        <button  class="btn" onclick="resetFrom()">Annulla</button>
                     </div>
-                    <div class="form-group col-3">
-                        <label for="fascia_eta">Fascia d'età</label>
-                        <select class="form-control" id="fascia_eta">
-                          <option>Minorenne</option>
-                          <option>18 - 65</option>
-                          <option>Over 65</option>
-                        </select>
-                    </div>    
+                    <!-- /Pulsanti -->
                 </div>
-                <!-- /dati utente-->
-    
-                <!-- Pulsanti -->
-                <div class="form-row justify-content-center">
-                    <button type="submit"  class="btn">Genera</button>
-                    <button type="reset" class="btn">Annulla</button>
-                </div>
-                <!-- /Pulsanti -->
-            </form>
+            </div>
             <!-- /Form dati passegero -->
         </section>
         <!-- /Sezione form utente -->
@@ -64,25 +66,25 @@
                 <div class="row">
                     <div class="col-3">
                         <h4>Nome passegero</h4>
-                        <span>Nome</span>
+                        <span id="nome_passeggero">Nome</span>
                     </div>
                     <div class="col">
                         <div class="row">
                             <div class="col-4">
                                 <h6>Offerta</h6>
-                                <span>promo</span>
+                                <span id="promo">promo</span>
                             </div>
                             <div class="col">
                                 <h6>Carrozza</h6>
-                                <span>5</span>
+                                <span id="carrozza">5</span>
                             </div>
                             <div class="col">
                                 <h6>Codice CP</h6>
-                                <span>65454651</span>
+                                <span id="codice">65454651</span>
                             </div>
                             <div class="col">
                                 <h6>Costo Biglietto</h6>
-                                <span>5,00</span>
+                                <span id="costo">5,00</span>
                             </div>
                         </div>
                     </div>

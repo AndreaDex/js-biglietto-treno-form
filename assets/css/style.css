@@ -2,9 +2,12 @@
 .bgc_purple {
   background-color: rgba(185, 20, 80, 1);
 }
+.bgc_white {
+  background-color: white;
+}
 /*** Body stile ***/
 /* form stile */
-form {
+.contenitore {
   width: 80%;
   margin: auto;
   background-color: white;
@@ -22,6 +25,7 @@ select {
 }
 
 .btn {
+  font-weight: 700;
   margin: 15px;
   background-color: rgba(204, 204, 204, 1);
   color: rgba(185, 20, 80, 1);
