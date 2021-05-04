@@ -41,6 +41,56 @@ select {
   border-color: rgba(185, 20, 80, 1);
 }
 
+.btn:active {
+  animation: gradient 250ms;
+  background: rgba(185, 20, 80, 1) 88;
+  color: #fff;
+}
+
+@keyframes gradient {
+  0% {
+    background: radial-gradient(
+      circle at center,
+      rgba(185, 20, 80, 0) 0%,
+      rgba(204, 204, 204, 1) 0%,
+      rgba(204, 204, 204, 1) 100%
+    );
+  }
+  25% {
+    background: radial-gradient(
+      circle at center,
+      rgba(185, 20, 80, 0.3) 24%,
+      rgba(204, 204, 204, 1) 25%,
+      rgba(204, 204, 204, 1) 100%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      rgba(185, 20, 80, 0.5) 49%,
+      rgba(204, 204, 204, 1) 50%,
+      rgba(204, 204, 204, 1) 100%
+    );
+  }
+  75% {
+    background: radial-gradient(
+      circle at center,
+      rgba(185, 20, 80, 0.8) 74%,
+      rgba(204, 204, 204, 1) 75%,
+      rgba(204, 204, 204, 1) 100%
+    );
+  }
+  100% {
+    color: #fff;
+    background: radial-gradient(
+      circle at center,
+      rgba(185, 20, 80, 1) 99%,
+      rgba(204, 204, 204, 1) 100%,
+      rgba(204, 204, 204, 1) 100%
+    );
+  }
+}
+
 /* Sezione Esito */
 .esito_biglietto {
   margin-bottom: 50px;
