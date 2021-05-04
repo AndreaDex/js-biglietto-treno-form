@@ -42,7 +42,7 @@ select {
 }
 
 .btn:active {
-  animation: gradient 250ms;
+  animation: gradient 150ms;
   background: rgba(185, 20, 80, 1) 88;
   color: #fff;
 }
